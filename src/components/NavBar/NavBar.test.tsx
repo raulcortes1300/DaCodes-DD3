@@ -2,12 +2,6 @@ import { render } from "@testing-library/react";
 import NavBar from "./NavBar.component";
 
 describe("NavBar", () => {
-  let container;
-
-  // beforeEach(() => {
-  //   const {container: renderedContainer} =
-  // })
-
   it("Displays component container", () => {
     const { getByTestId } = render(<NavBar />);
     const navBarContainer = getByTestId(/navBarContainer/i);
